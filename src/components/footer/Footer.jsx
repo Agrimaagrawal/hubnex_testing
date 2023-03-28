@@ -1,9 +1,11 @@
 import React, { useEffect, useReducer, useState } from 'react'
 import arrow from '../../assets/arrowR.png'
-import twitter from '../../assets/twitter.png'
-import linkedin from '../../assets/linkedin.png'
-import insta from '../../assets/insta.png'
 import { Link } from 'react-router-dom'
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import CopyrightIcon from '@mui/icons-material/Copyright';
 
 
 const Footer = () => {
@@ -92,29 +94,30 @@ const Footer = () => {
       <div className=' flex flex-col w-full justify-center items-center gap-5 text-white h-80 text-lg'>
         <span className=' text-lg'>connect with us</span>
         <div className=' flex flex-wrap gap-5 items-center'>
-          <Link to='/about'><img src={twitter} alt='twitter' width={18}/></Link>
-          <Link to='/about'><img src={linkedin} alt='linkedin' width={18}/></Link>
-          <Link to='/about'><img src={insta} alt='instagram' width={18}/></Link>
+          <Link to='/about'><TwitterIcon/></Link>
+          <Link to='/about'><LinkedInIcon/></Link>
+          <Link to='/about'><InstagramIcon/></Link>
+          <Link to='/about'><FacebookIcon/></Link>
           {/* <img src={fb} alt='facebook' width={20}/> */}
         </div>
       </div>
       <hr className=' w-full border-white border-[1px]'/>
       <div className=' h-10 md:h-28 w-[80%] m-auto flex justify-center md:justify-between text-white items-center'>
         <div>
-          <span className=' text-xs'>Copyright @ 2023 Hubnex. All Rights Reserved</span>
+          <span className=' text-xs'>Copyright <CopyrightIcon fontSize='small'/> 2023 Hubnex. All Rights Reserved</span>
         </div>
         <div className='hidden  md:flex gap-2 text-xs '>
-          <Link >About Us</Link>
+          <Link to='/about'>About Us</Link>
           <hr className=' border-[1px] h-4'/>
-          <Link >Data Protection</Link>
+          <Link to='service'>Data Protection</Link>
           <hr className=' border-[1px] h-4'/>
-          <Link >Terms and Conditions</Link>
+          <Link to='/about'>Terms and Conditions</Link>
           <hr className=' border-[1px] h-4'/>
-          <Link >Privacy Policy</Link>
+          <Link to='/about'>Privacy Policy</Link>
           <hr className=' border-[1px] h-4'/>
-          <Link >Contact Us</Link>
+          <Link to='/contact'>Contact Us</Link>
           <hr className=' border-[1px] h-4'/>
-          <Link >Invest in Us</Link>
+          <Link to='/'>Invest in Us</Link>
           <hr className=' border-[1px] h-4'/>
         </div>
       </div>

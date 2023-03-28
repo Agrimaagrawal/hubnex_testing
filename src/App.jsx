@@ -3,8 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './routes/Root'
 import React, { Suspense } from 'react'
 import Loader from './components/loader/Loader'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 const Home = React.lazy(()=> import ('./pages/Home')) 
 const About = React.lazy(()=> import ('./pages/About')) 
 const Services = React.lazy(()=> import('./pages/Services') ) 
@@ -24,17 +23,14 @@ function App() {
       './assets/brandImage.png',
       './assets/chorus.png',
       './assets/close.png',
-      './assets/fb.png',
       './assets/footer.png',
       './assets/girlImg.png',
       './assets/hamMenu.png',
       './assets/hero.png',
       './assets/industryLander.png',
-      './assets/insta.png',
       './assets/iphoneTransparent.png',
       './assets/lander_image.jpg',
       './assets/landerImage1.png',
-      './assets/linkedin.png',
       './assets/logo.png',
       './assets/manArt.png',
       './assets/menuUp.png',
@@ -56,7 +52,6 @@ function App() {
       './assets/Tata Consultancy Services - png 0.png',
       './assets/testimo.png',
       './assets/thano.png',
-      './assets/twitter.png',
       './assets/user1.png',
       './assets/vector2.png',
       './assets/Xmark.png'
