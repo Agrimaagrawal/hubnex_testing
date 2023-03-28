@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+}
+.active.active > .text-1{
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+.active.active > p{
+  width: 100px;
+}
+
+.active.active > .text-2{
+  color: black;
+}
+.active.active > .line{
+  background-color: black;
+}
+
