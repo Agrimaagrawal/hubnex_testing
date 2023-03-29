@@ -11,10 +11,10 @@ const Brand = () => {
             <Navbar/>
             <MobileNavbar/>
         </div> */}
-        <div className=' h-full w-full text-white'>
-            <div className=' flex flex-col justify-start mt-32 md:mt-14 h-full w-full items-center'>
-                <h1 className=' text-4xl md:text-5xl font-semibold text-center'>helping you build products</h1>
-                <span className=' text-black pt-5 font-semibold text-3xl md:text-5xl'>that shine</span>
+        <div className=' h-full w-full text-white flex justify-center'>
+            <div className=' flex flex-col md:justify-start  w-[300px] mt-24 md:mt-32  md:h-full md:w-full items-center'>
+                <h1 className=' text-2xl md:text-5xl font-semibold text-center'>helping you build products</h1>
+                <span className=' text-black pt-5 font-bold text-2xl md:text-5xl'>that shine</span>
             </div>
         </div>
         <div className=' text-white'>

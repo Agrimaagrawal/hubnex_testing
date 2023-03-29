@@ -23,7 +23,7 @@ const Testimonial = () => {
                 </div>
             </div>
 
-            <div className=' w-[350px] flex-2 pt-48 md:pt-0 text-blue-700 font-semibold text-base text-center md:text-start'>
+            <div className=' w-[250px] flex-2 pt-48 md:w-[350px] md:pt-0 text-blue-700 font-semibold text-base text-center md:text-start'>
                 <p className=''>not only do we help businesses reach their goals, but help build the empire</p>
                 <span>- Sathya Nadela</span>
             </div>
