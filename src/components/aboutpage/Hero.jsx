@@ -11,14 +11,14 @@ const Hero = () => {
         <MobileNavbar/>
         <div className=' w-full md:w-[75%} h-full md:m-auto flex items-center'>
             <div className=' flex flex-col text-white gap-5 absolute left-10 md:left-36'>
-              <div className=' text-6xl '>
+              <div className=' text-5xl md:text-6xl '>
                 <span>About Us</span>
               </div>
-              <div className=' w-80 md:w-[450px]  md:text-lg'>
+              <div className=' w-44  text-sm md:w-[450px]  md:text-lg'>
                 <p>Passionate about exceptional IT services, delivering innovative solutions to meet unique needs.</p>
               </div>
               <div>
-                <button className=' bg-transparent border-white border-[2px] py-2 px-5 rounded-full'>Read more</button>
+                <button className=' bg-transparent border-white border-[2px] py-1 px-4 md:py-2 md:px-5 rounded-full '>Read more</button>
               </div>
             </div>
         </div>
