@@ -32,6 +32,7 @@ module.exports = {
         'footerImg': "url('@assets/footer.png')",
         'abouts': "url('@assets/abouts.png')",
         'earth':"url('@assets/earth.png')",
+        'hands':"url('@assets/hands.png')",
       }
     },
   },
