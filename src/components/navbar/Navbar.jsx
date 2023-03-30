@@ -24,7 +24,7 @@ const Navbar = () => {
             <span className=' text-white font-bold text-xl'>hubnex Labs</span>
           </Link>
         </div>
-        <div className=' hidden md:flex gap-16 items-center text-white'>
+        <div className=' hidden xl:flex gap-16 items-center text-white'>
           <NavLink to='/about' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>About Us</NavLink>
           <NavLink to='/service' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Services</NavLink>
           <NavLink to='/industries' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Industries</NavLink>
