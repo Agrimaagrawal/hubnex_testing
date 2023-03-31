@@ -1,14 +1,12 @@
 import React from 'react'
 import Navbar from '../navbar/Navbar'
 import aboutLander from '../../assets/aboutLander.png'
-import MobileNavbar from '../navbar/MobileNavbar'
 
 const Hero = () => {
   return (
     <div className=' h-screen w-full relative  bg-black'>
         <img src={aboutLander} alt='aboutLanderPage' className=' absolute bottom-0 right-0 w-[100%] object-cover h-[60%] md:h-full md:w-[75%]'/>
         <Navbar />
-        <MobileNavbar/>
         <div className=' w-full md:w-[75%} h-full md:m-auto flex items-center'>
             <div className=' flex flex-col text-white gap-5 absolute left-10 md:left-36'>
               <div className=' text-5xl md:text-6xl '>
