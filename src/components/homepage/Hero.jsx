@@ -1,6 +1,5 @@
 import Navbar from '../navbar/Navbar'
 import { Link } from 'react-router-dom'
-import MobileNavbar from '../navbar/MobileNavbar'
 import React from 'react'
  
 const Hero = () => {
