@@ -20,6 +20,7 @@ const MobileNavbar = () => {
     }
 
   return (
+    
     <div className=' absolute top-0 right-0 overflow-hidden  h-screen w-full z-40 xl:hidden inline'>
         {searchToggle && <Search toggler={searchToggle}/>}
         {!open ?

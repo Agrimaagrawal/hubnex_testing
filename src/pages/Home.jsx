@@ -1,6 +1,4 @@
 import React from 'react'
-import { Suspense } from 'react'
-import { useActiveMenu } from 'react-active-menu'
 
 import  Footer from '../components/footer/Footer'
 import  About from '../components/homepage/About'
@@ -9,45 +7,47 @@ import  Hero from '../components/homepage/Hero'
 import  Services from '../components/homepage/Services'
 import  Testimonial from '../components/homepage/Testimonial'
 import  LeftNavbar from '../components/navbar/LeftNavbar'
-import Partners from '../components/aboutpage/Partners'
 import MobileNavbar from '../components/navbar/MobileNavbar'
-import Navbar from '../components/navbar/Navbar'
+
 
 
 
 
 const Home = () => {
 
-  const { registerTrigger, registerContainer, registerSection} = useActiveMenu({ smooth: true})
 
   return (
+
     <>
     <div className=' h-screen w-full relative'>
-        <div className=' absolute left-10 z-50'>
-              <LeftNavbar register={registerTrigger}/>
+
+        <div className=' hidden lg:inline-block absolute left-10 z-50'>
+              <LeftNavbar/>
           </div>
-          <div ref={registerContainer} className=' h-full overflow-auto'>
-            <section ref={registerSection("section-1")} className='h-full w-full overflow-hidden'>
-                <Hero />
-            </section>
+
+          <div className=' h-full w-full '>
+
+              <section id='section-1' className='h-full w-full '>
+                  <Hero />
+              </section>
               
-              <section ref={registerSection("section-2")} className='h-full w-full  overflow-hidden'>
+              <section id='section-2' className='h-full w-full '>
                 <Brand/>
               </section>
               
-              <section ref={registerSection("section-3")} className='h-full w-full  overflow-hidden'>
+              <section  id='section-3' className='h-full w-full '>
                 <Services/>
               </section>
               
-              <section ref={registerSection("section-4")} className='h-full w-full overflow-hidden'>
+              <section id='section-4' className='h-full w-full '>
                 <Testimonial/>
               </section>
               
-              <section ref={registerSection("section-5")} className='h-full w-full  overflow-hidden'>
+              <section id='section-5' className='h-full w-full '>
                 <About/>
               </section>
               
-              <section ref={registerSection("section-6")} className='h-full w-full  overflow-hidden' >
+              <section id='section-6' className='h-full w-full ' >
                 <Footer/>
               </section>
           </div>

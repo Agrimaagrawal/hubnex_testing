@@ -4,6 +4,7 @@ import Root from './routes/Root'
 import React, { Suspense } from 'react'
 import Loader from './components/loader/Loader'
 import { useEffect, useState } from 'react'
+
 const Home = React.lazy(()=> import ('./pages/Home')) 
 const About = React.lazy(()=> import ('./pages/About')) 
 const Services = React.lazy(()=> import('./pages/Services') ) 
@@ -15,46 +16,46 @@ function App() {
   const [ loading, setLoading] = useState(true);
   useEffect(()=>{
     const images = [
-      '@assets/aboutLander.png',
-      '@assets/abouts.png',
-      '@assets/arrowR.png',
-      '@assets/backgroundVector.png',
-      '@assets/balloon.png',
-      '@assets/brandImage.png',
-      '@assets/chorus.png',
-      '@assets/close.png',
-      '@assets/footer.png',
-      '@assets/girlImg.png',
-      '@assets/hamMenu.png',
-      '@assets/hero.png',
-      '@assets/industryLander.png',
-      '@assets/iphoneTransparent.png',
-      '@assets/lander_image.jpg',
-      '@assets/landerImage1.png',
-      '@assets/logo.png',
-      '@assets/manArt.png',
-      '@assets/menuUp.png',
-      '@assets/nasa.png',
-      '@assets/Our-Mission.png.png',
-      '@assets/Our-Philosophy.png.png',
-      '@assets/Our-Strategy.png.png',
-      '@assets/Our-Vision.png.png',
-      '@assets/pantera.png',
-      '@assets/Plus.png',
-      '@assets/reddit.png',
-      '@assets/search_icon.png',
-      '@assets/service1.png',
-      '@assets/service2.png',
-      '@assets/service3.png',
-      '@assets/service4.png',
-      '@assets/serviceMan.png',
-      '@assets/shakehand.png',
-      '@assets/Tata Consultancy Services - png 0.png',
-      '@assets/testimo.png',
-      '@assets/thano.png',
-      '@assets/user1.png',
-      '@assets/vector2.png',
-      '@assets/Xmark.png'
+      './assets/aboutLander.png',
+      './assets/abouts.png',
+      './assets/arrowR.png',
+      './assets/backgroundVector.png',
+      './assets/balloon.png',
+      './assets/brandImage.png',
+      './assets/chorus.png',
+      './assets/close.png',
+      './assets/footer.png',
+      './assets/girlImg.png',
+      './assets/hamMenu.png',
+      './assets/hero.png',
+      './assets/industryLander.png',
+      './assets/iphoneTransparent.png',
+      './assets/lander_image.jpg',
+      './assets/landerImage1.png',
+      './assets/logo.png',
+      './assets/manArt.png',
+      './assets/menuUp.png',
+      './assets/nasa.png',
+      './assets/Our-Mission.png.png',
+      './assets/Our-Philosophy.png.png',
+      './assets/Our-Strategy.png.png',
+      './assets/Our-Vision.png.png',
+      './assets/pantera.png',
+      './assets/Plus.png',
+      './assets/reddit.png',
+      './assets/search_icon.png',
+      './assets/service1.png',
+      './assets/service2.png',
+      './assets/service3.png',
+      './assets/service4.png',
+      './assets/serviceMan.png',
+      './assets/shakehand.png',
+      './assets/Tata Consultancy Services - png 0.png',
+      './assets/testimo.png',
+      './assets/thano.png',
+      './assets/user1.png',
+      './assets/vector2.png',
+      './assets/Xmark.png'
     ];
 
     cacheImages(images);
@@ -82,7 +83,8 @@ function App() {
           children: [
             {
               path: '/',
-              element: <Suspense fallback={<Loader/>}><Home/></Suspense>
+              element:
+               <Suspense fallback={<Loader/>}><Home/></Suspense>
             },
             {
               path: '/about',

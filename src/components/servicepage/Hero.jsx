@@ -1,13 +1,11 @@
 import React from 'react'
 import serviceLander from '../../assets/manArt.png'
 import Navbar from '../navbar/Navbar'
-import MobileNavbar from '../navbar/MobileNavbar'
 
 const Hero = () => {
   return (
     <div className=' h-screen w-full relative bg-black bg-manart bg-cover bg-center bg-no-repeat overflow-hidden md:bg-none'>
         <Navbar />
-        <MobileNavbar/>
         <div className='w-full h-full flex items-center justify-between'>
             <div className=' text-white w-[80%] m-auto flex justify-between h-full items-center'>
                 <div className=' w-90 flex flex-col gap-10'>

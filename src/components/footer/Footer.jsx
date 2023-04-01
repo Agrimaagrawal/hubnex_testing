@@ -6,59 +6,46 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import CopyrightIcon from '@mui/icons-material/Copyright';
-
+import axios from 'axios';
 
 const Footer = () => {
 
-  // // const [firstName, setFirstName] = useState("");
-  // // const [lastName, setLastName] = useState("");
-  // // const [email, setEmail] = useState("");
-  // // const [phNo, setPhNo] = useState("");
-  // // const [message, setMessage] = useState("");
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [email, setEmail] = useState("")
+  const [phoneNo, setPhoneNo] = useState(null);
+  const [message, setMessage] = useState("")
 
-  // const InitialState = {
-  //   firstName: "",
-  //   lastName: "",
-  //   email: "",
-  //   mobileNo: "",
-  //   message: "",
-  // };
+  const userData = {
+    method : 'POST',
+    headers : { 'Content-Type': 'application/json' },
+    body : JSON.stringify({
+      firstname: firstName,
+      lastname: lastName,
+      email: email,
+      phoneNo: phoneNo,
+      message: message
+    })
+  };
 
-  // const formDetails = (state, action)=>{
-  //   switch(action.type){
-  //     case ADD_FIRST_NAME:
-  //       return {...state, firstName: action.first_name}
-  //     case ADD_LAST_NAME:
-  //       return {...state, firstName: action.first_name}
-  //     case ADD_EMAIL:
-  //       return {...state, firstName: action.first_name}
-  //     case ADD_MOBILE:
-  //       return {...state, firstName: action.first_name}
-  //     case ADD_MESSAGE:
-  //         return {...state, firstName: action.first_name}
-  //     default : 
-  //      throw new Error();
-  //     }
-  // }
+  const updateUser = {
+    method : 'PUT',
+    headers : { 'Content-Type': 'application/json' },
+    body : JSON.stringify({
+        status: true
+    })
+  };
 
-  // const [state, dispatch] = useReducer(formDetails, InitialState);
-
-  // const [data, setData] = useState([
-  //   {
-  //     firstName: firstName,
-  //     lastName: lastName,
-  //     email: email,
-  //     mobileNo: phNo,
-  //     message: message
-  //   }
-  // ]);
-
-  // const handleSubmit = async (e)=>{
-  //   e.preventDefault()
-  //   console.log(firstName)
-  // }
-
-
+  
+  const handleSubmit = async (e)=>{
+    e.preventDefault();
+    try {
+      const data = await (await fetch("http://localhost:3000/api/user", userData)).json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
   return (
     <div className=' flex flex-col justify-center items-center h-screen w-full bg-yellow-400 snap-start bg-footerImg bg-center bg-no-repeat bg-cover'>
@@ -74,7 +61,7 @@ const Footer = () => {
             <p className=' text-center md:text-start'>our team will reach out to you as soon as <br/>possible</p>
           </div>
         </div>
-          <form className='flex flex-col gap-4 m-auto w-80 md:w-auto md:m-0 mt-10 md:mt-0'>
+          <form className='flex flex-col gap-4 m-auto w-80 md:w-auto md:m-0 mt-10 md:mt-0' onSubmit={handleSubmit}>
             <label className=' text-gray-200' htmlFor='first_name'>FIRST NAME</label>
             <input className='  outline-none bg-transparent border-b-[1px] border-b-gray-300 w-80 md:w-96' type='text' id='first_name' required maxLength={25} onChange={(e)=>setFirstName(e.target.value)}/>
             <label className=' text-gray-200' htmlFor='last_name'>LAST NAME</label>
@@ -82,7 +69,7 @@ const Footer = () => {
             <label className=' text-gray-200' htmlFor='email'>EMAIL</label>
             <input className='  outline-none bg-transparent border-b-[1px] border-b-gray-300 w-80 md:w-96' type='email' id='email' required onChange={(e)=>setEmail(e.target.value)}/>
             <label className=' text-gray-200' htmlFor='mobile_no'>PHONE NUMBER</label>
-            <input className='  outline-none bg-transparent border-b-[1px] border-b-gray-300 w-80 md:w-96' type='tel' id='mobile_no' required maxLength={12} onChange={(e)=>setPhNo(e.target.value)}/>
+            <input className='  outline-none bg-transparent border-b-[1px] border-b-gray-300 w-80 md:w-96' type='tel' id='mobile_no' required maxLength={12} onChange={(e)=>setPhoneNo(e.target.value)}/>
             <label className=' text-gray-200' htmlFor='message'>MESSAGE</label>
             <input className=' pt-5 outline-none bg-transparent border-b-[1px] border-b-gray-300 w-80 md:w-96' type='text' id='message' required onChange={(e)=>setMessage(e.target.value)}/>
             <label htmlFor='submit' className='flex gap-3 bg-transparent cursor-pointer border-white border-[1px] mt-5 shadow-md shadow-violet-500 py-2 px-5 w-max rounded-full'>

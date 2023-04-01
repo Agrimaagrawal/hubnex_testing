@@ -6,19 +6,29 @@
 body{
   scroll-behavior: smooth;
 }
-.active.active > .text-1{
-  color: white;
+
+
+li {
+  list-style: none;
+}
+
+.active {
+  font-weight: bolder;
+  /* transition: all 0.5s; */
+}
+
+.active .text-1 {
   display: inline-block;
-  cursor: pointer;
-}
-.active.active > p{
-  width: 100px;
+  font-size: 14px;
 }
 
-.active.active > .text-2{
-  color: black;
-}
-.active.active > .line{
-  background-color: black;
+.active .line {
+  width: 128px;
+  height: 2px;
+  /* transition: all 0.5s; */
 }
 
+li:hover .text-1{
+  display: inline-block;
+  font-size: 14px;
+}
