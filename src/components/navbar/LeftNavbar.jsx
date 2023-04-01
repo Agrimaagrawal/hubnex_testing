@@ -3,7 +3,7 @@ import { useRef } from "react";
 const LeftNavbar = ({ register }) => {
 
 	return (
-		<div className="h-screen hidden md:flex flex-col items-start justify-center gap-10 text-2xlfixed w-32">
+		<div className="h-screen hidden md:flex flex-col items-start justify-center gap-10 text-2xl fixed w-32">
 			<div className='text-white w-full h-full flex flex-col items-start justify-center gap-10 '>
 				<div ref={register("section-1")} className=' w-full flex flex-col gap-2 active'>
 					<p className=' h-[2px] w-10 bg-white  cursor-pointer'></p>

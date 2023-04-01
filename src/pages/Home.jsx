@@ -26,28 +26,28 @@ const Home = () => {
         <div className=' absolute left-10 z-50'>
               <LeftNavbar register={registerTrigger}/>
           </div>
-          <div ref={registerContainer} className=' h-full snap-y snap-mandatory overflow-auto'>
-            <section ref={registerSection("section-1")} className='h-full w-full snap-center overflow-hidden'>
+          <div ref={registerContainer} className=' h-full overflow-auto'>
+            <section ref={registerSection("section-1")} className='h-full w-full overflow-hidden'>
                 <Hero />
             </section>
               
-              <section ref={registerSection("section-2")} className='h-full w-full snap-center overflow-hidden'>
+              <section ref={registerSection("section-2")} className='h-full w-full  overflow-hidden'>
                 <Brand/>
               </section>
               
-              <section ref={registerSection("section-3")} className='h-full w-full snap-center overflow-hidden'>
+              <section ref={registerSection("section-3")} className='h-full w-full  overflow-hidden'>
                 <Services/>
               </section>
               
-              <section ref={registerSection("section-4")} className='h-full w-full snap-center overflow-hidden'>
+              <section ref={registerSection("section-4")} className='h-full w-full overflow-hidden'>
                 <Testimonial/>
               </section>
               
-              <section ref={registerSection("section-5")} className='h-full w-full snap-center overflow-hidden'>
+              <section ref={registerSection("section-5")} className='h-full w-full  overflow-hidden'>
                 <About/>
               </section>
               
-              <section ref={registerSection("section-6")} className='h-full w-full snap-center overflow-hidden' >
+              <section ref={registerSection("section-6")} className='h-full w-full  overflow-hidden' >
                 <Footer/>
               </section>
           </div>
