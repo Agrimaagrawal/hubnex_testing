@@ -10,6 +10,7 @@ const About = React.lazy(()=> import ('./pages/About'))
 const Services = React.lazy(()=> import('./pages/Services') ) 
 const Industries = React.lazy(()=> import('./pages/Industries') ) 
 const Contact = React.lazy(()=> import('./pages/Contact') ) 
+const Startup = React.lazy(()=> import('./pages/Startup'))
 
 function App() {
 
@@ -101,6 +102,10 @@ function App() {
             {
               path: '/contact',
               element: <Suspense fallback={<Loader/>}><Contact/></Suspense>
+            },
+            {
+              path: '/startup-program',
+              element: <Suspense fallback={<Loader/>}><Startup/></Suspense>
             },
           ],
         },

@@ -21,7 +21,7 @@ const MobileNavbar = () => {
 
   return (
     
-    <div className=' absolute top-0 right-0 overflow-hidden  h-screen w-full z-40 xl:hidden inline'>
+    <div className=' absolute top-0 right-0 overflow-hidden  h-screen w-full z-40 xl:hidden inline-block'>
         {searchToggle && <Search toggler={searchToggle}/>}
         {!open ?
             <img onClick={handleOpen} src={menu} width={30} className=" cursor-pointer right-8 top-6 absolute"/>

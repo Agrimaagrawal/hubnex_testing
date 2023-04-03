@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
 
-    <div className=' w-full h-20 fixed bg-black bg-opacity-50 lg:bg-none lg:bg-opacity-0 lg:absolute top-0 lg:top-0 z-50'>
+    <div className=' w-full h-20 fixed bg-black bg-opacity-50 lg:bg-none lg:bg-opacity-0 lg:absolute top-0 lg:top-0 z-40'>
       {searchToggle && <Search toggler={searchToggle}/>}
       <div className=' h-full md:w-4/5 w-[90%] m-auto items-center flex justify-between'>
         <div className='cursor-pointer z-50'>
@@ -31,7 +31,7 @@ const Navbar = () => {
           <NavLink to='/industries' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Industries</NavLink>
           <NavLink to='/contact' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Contact</NavLink>
           <img onClick={handleSearch} src={searchIcon} alt="search icon" width={20} height={20} className='cursor-pointer z-50'/>
-          <Link to='/contact'><button className=' border-white bg-transparent border-2 py-[2px] px-3 rounded-full text-sm text-white'>Startup Program</button></Link>
+          <Link to='/startup-program'><button className=' border-white bg-transparent border-2 py-[2px] px-3 rounded-full text-sm text-white'>Startup Program</button></Link>
         </div>
         <MobileNavbar />
       </div>
