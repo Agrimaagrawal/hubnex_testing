@@ -11,6 +11,19 @@ const Services = React.lazy(()=> import('./pages/Services') )
 const Industries = React.lazy(()=> import('./pages/Industries') ) 
 const Contact = React.lazy(()=> import('./pages/Contact') ) 
 const Startup = React.lazy(()=> import('./pages/Startup'))
+const Admin = React.lazy(()=> import('./pages/Admin'))
+const Dashboard = React.lazy(()=> import('./components/adminpage/Dashboard')) 
+const Recruiter = React.lazy(()=> import('./components/adminpage/Recruiter')) 
+const Company = React.lazy(()=> import('./components/adminpage/Company')) 
+const CMS = React.lazy(()=> import('./components/adminpage/CMS')) 
+const Payments = React.lazy(()=> import('./components/adminpage/Payments')) 
+const Forms = React.lazy(()=> import('./components/adminpage/Forms')) 
+const Referral = React.lazy(()=> import( './components/adminpage/Referral'))
+const ManageRoles = React.lazy(()=> import('./components/adminpage/ManageRoles')) 
+const Applications = React.lazy(()=> import( './components/adminpage/Applications'))
+const Invoices = React.lazy(()=> import('./components/adminpage/Invoices')) 
+const PushNotify = React.lazy(()=> import('./components/adminpage/PushNotify')) 
+const Help = React.lazy(()=> import('./components/adminpage/Help')) 
 
 function App() {
 
@@ -106,6 +119,60 @@ function App() {
             {
               path: '/startup-program',
               element: <Suspense fallback={<Loader/>}><Startup/></Suspense>
+            },
+            {
+              path: '/admin',
+              element: <Suspense fallback={<Loader/>}><Admin/></Suspense>,
+              children: [
+                {
+                  path: '/admin',
+                  element: <Suspense fallback={<Loader/>}><Dashboard/></Suspense>
+                },
+                {
+                  path: '/admin/recruiter',
+                  element: <Suspense fallback={<Loader/>}><Recruiter/></Suspense>
+                },
+                {
+                  path: '/admin/company',
+                  element: <Suspense fallback={<Loader/>}><Company/></Suspense>
+                },
+                {
+                  path: '/admin/cms',
+                  element: <Suspense fallback={<Loader/>}><CMS/></Suspense>
+                },
+                {
+                  path: '/admin/forms',
+                  element: <Suspense fallback={<Loader/>}><Forms/></Suspense>
+                },
+                {
+                  path: '/admin/referral',
+                  element: <Suspense fallback={<Loader/>}><Referral/></Suspense>
+                },
+                {
+                  path: '/admin/manage-roles',
+                  element: <Suspense fallback={<Loader/>}><ManageRoles/></Suspense>
+                },
+                {
+                  path: '/admin/payments',
+                  element: <Suspense fallback={<Loader/>}><Payments/></Suspense>
+                },
+                {
+                  path: '/admin/application',
+                  element: <Suspense fallback={<Loader/>}><Applications/></Suspense>
+                },
+                {
+                  path: '/admin/invoices',
+                  element: <Suspense fallback={<Loader/>}><Invoices/></Suspense>
+                },
+                {
+                  path: '/admin/push-notification',
+                  element: <Suspense fallback={<Loader/>}><PushNotify/></Suspense>
+                },
+                {
+                  path: '/admin/help',
+                  element: <Suspense fallback={<Loader/>}><Help/></Suspense>
+                },
+              ]
             },
           ],
         },
