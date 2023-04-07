@@ -26,9 +26,7 @@ const Testimonial = () => {
                 </div>
             </div>
         </div>
-        <div className=' flex-1 w-full'>
-            <Partners />
-        </div>
+        
     </div>
   )
 }

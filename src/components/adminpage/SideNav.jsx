@@ -71,7 +71,7 @@ const SideNav = () => {
                 <Link to='/admin/cms' className=' flex items-center'>CMS <span onClick={handleCmsDropdown}>{cmsOpen ? <KeyboardArrowUpIcon/> : <KeyboardArrowDown />}</span></Link>
                 {cmsOpen &&
                 <div className=' flex flex-col gap-2 '>
-                  <Link>Terms and conditions</Link>
+                  <Link to='/admin/cms/terms'>Terms and conditions</Link>
                   <Link>Privacy Policy</Link>
                   <Link>Data Protection</Link>
                 </div>
@@ -87,7 +87,7 @@ const SideNav = () => {
               <Link to='/admin/forms' className=' flex items-center'>Forms <span onClick={handleFormDropdown}>{formOpen ? <KeyboardArrowUpIcon/> : <KeyboardArrowDown />}</span></Link>
               {formOpen &&
                 <div className=' flex flex-col gap-2 '>
-                  <Link>Invest</Link>
+                  <Link to='/admin/forms/invest'>Invest</Link>
                   <Link>Contact Us</Link>
                 </div>
                 }
@@ -102,7 +102,7 @@ const SideNav = () => {
               <Link to='/admin/referral' className=' flex items-center'>Referral <span onClick={handleReferralDropdown}>{referralOpen ? <KeyboardArrowUpIcon/> : <KeyboardArrowDown />}</span></Link>
                 {referralOpen &&
                   <div className=' flex flex-col gap-2 '>
-                    <Link>Invest</Link>
+                    <Link >Invest</Link>
                     <Link>Contact Us</Link>
                   </div>
                   }
