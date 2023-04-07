@@ -48,7 +48,7 @@ const Footer = () => {
   }
 
   return (
-    <div className=' flex flex-col justify-center items-center min-h-screen w-full bg-footerImg bg-center bg-no-repeat bg-cover'>
+    <div className=' flex flex-col justify-center items-center h-screen w-full bg-footerImg bg-center z-50 bg-no-repeat bg-cover'>
       <div className=' md:w-[70%] h-full md:flex justify-between items-center text-white py-5 lg:py-0 md:mt-28'>
         <div className=' flex flex-col gap-5 md:gap-10'>
           <div className=' text-4xl md:text-6xl font-semibold text-white'>
@@ -61,7 +61,7 @@ const Footer = () => {
             <p className=' text-center md:text-start'>our team will reach out to you as soon as <br/>possible</p>
           </div>
         </div>
-          <form className='flex flex-col gap-4 m-auto w-80 md:w-auto md:m-0 mt-10 z-50 md:mt-0' onSubmit={handleSubmit}>
+          <form className='flex flex-col gap-4 m-auto w-80 md:w-auto md:m-0 mt-10  md:mt-0' onSubmit={handleSubmit}>
             <label className=' text-gray-200' htmlFor='first_name'>FIRST NAME</label>
             <input className='  outline-none bg-transparent border-b-[1px] border-b-gray-300 w-80 md:w-96' type='text' id='first_name' required maxLength={25} onChange={(e)=>setFirstName(e.target.value)}/>
             <label className=' text-gray-200' htmlFor='last_name'>LAST NAME</label>

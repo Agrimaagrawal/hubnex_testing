@@ -4,6 +4,8 @@ import Root from './routes/Root'
 import React, { Suspense } from 'react'
 import Loader from './components/loader/Loader'
 import { useEffect, useState } from 'react'
+import Access from './components/Access'
+import ProtectedRoute from './components/ProtectedRoute'
 
 const Home = React.lazy(()=> import ('./pages/Home')) 
 const About = React.lazy(()=> import ('./pages/About')) 
@@ -130,8 +132,12 @@ function App() {
             },
             
             {
+              path: '/access',
+              element: <Suspense fallback={<Loader/>}><Access/></Suspense>
+            },
+            {
               path: '/admin',
-              element: <Suspense fallback={<Loader/>}><Admin/></Suspense>,
+              element:  <Suspense fallback={<Loader/>}><Admin/></Suspense>,
               children: [
                 {
                   path: '/admin',
