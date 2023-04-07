@@ -23,7 +23,9 @@
     "react-router-dom": "^6.9.0",
     "react-scroll": "^1.8.9",
     "react-use-scroll-snap": "^0.0.4",
-    "swiper": "^9.1.1"
+    "scrollbar": "^0.1.12",
+    "swiper": "^9.1.1",
+    "tailwind": "^4.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

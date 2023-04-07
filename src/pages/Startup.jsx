@@ -16,6 +16,8 @@ const Startup = () => {
         <Team/>
         <Field/>
         <Contact/>
+        
+        
     </div>
   )
 }

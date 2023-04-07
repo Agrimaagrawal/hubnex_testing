@@ -48,7 +48,7 @@ const Footer = () => {
   }
 
   return (
-    <div className=' flex flex-col justify-center items-center h-screen w-full bg-footerImg bg-center bg-no-repeat bg-cover'>
+    <div className=' flex flex-col justify-center items-center min-h-screen w-full bg-footerImg bg-center bg-no-repeat bg-cover'>
       <div className=' md:w-[70%] h-full md:flex justify-between items-center text-white py-5 lg:py-0 md:mt-28'>
         <div className=' flex flex-col gap-5 md:gap-10'>
           <div className=' text-4xl md:text-6xl font-semibold text-white'>
@@ -98,7 +98,7 @@ const Footer = () => {
           <hr className=' border-[1px] h-4'/>
           <Link to='service'>Data Protection</Link>
           <hr className=' border-[1px] h-4'/>
-          <Link to='/about'>Terms and Conditions</Link>
+          <Link to='/admin'>Terms and Conditions</Link>
           <hr className=' border-[1px] h-4'/>
           <Link to='/about'>Privacy Policy</Link>
           <hr className=' border-[1px] h-4'/>
