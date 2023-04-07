@@ -4,15 +4,23 @@ import logo from '../../assets/logo.png'
 import searchIcon from '../../assets/search_icon.png'
 import Search from '../searchbar/Search'
 import MobileNavbar from './MobileNavbar'
+import menu from '@assets/menuUp.png'
+import close from '@assets/Xmark.png'
+import search from '@assets/search_icon.png'
 
 
 const Navbar = () => {
 
   const [searchToggle, setSearchToggle] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleSearch = () =>{
     setSearchToggle((prev)=> !prev)
   }
+  const handleOpen = ()=>{
+    setOpen((prev)=>!prev)
+}
+
 
   return (
 
@@ -33,7 +41,15 @@ const Navbar = () => {
           <img onClick={handleSearch} src={searchIcon} alt="search icon" width={20} height={20} className='cursor-pointer z-50'/>
           <Link to='/startup-program'><button className=' border-white bg-transparent border-2 py-[2px] px-3 rounded-full text-sm text-white'>Startup Program</button></Link>
         </div>
-        <MobileNavbar />
+        <div className=' flex xl:hidden z-50'>
+          <img onClick={handleSearch} src={search} className=' z-50 absolute top-[30px] right-24 w-6' />
+          {!open ?
+              <img onClick={handleOpen} src={menu} width={30} className=" cursor-pointer right-8 top-6 absolute"/>
+              :
+              <img onClick={handleOpen} src={close} width={25} className=" z-[100] cursor-pointer right-8 top-6 absolute"/>
+          }
+        </div>
+        <MobileNavbar open={open}/>
       </div>
     </div>
   )

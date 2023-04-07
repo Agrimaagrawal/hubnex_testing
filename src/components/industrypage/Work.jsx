@@ -9,7 +9,7 @@ const Work = () => {
     <img src={thanos} className=' md:hidden absolute bottom-0 left-0 brightness-[50%] w-full h-[500px] object-cover'/>
     <img src={vector2} className=' absolute h-full w-full brightness-[20%]'/>
         <div className=' w-[80%] h-full flex flex-col justify-evenly md:justify-center md:items-center gap-10 md:gap-0 text-white'>
-            <div className=' flex flex-col gap-3 justify-center items-center z-50'>
+            <div className=' flex flex-col gap-3 justify-center items-center z-30'>
                 <span className=' text-4xl md:text-6xl font-bold'>What We Do</span>
                 <p className=' text-lg text-center'>Delivering exponential value throughout the care ecosystem</p>
             </div>
@@ -18,7 +18,7 @@ const Work = () => {
                     <img src={thanos} className=' w-full '/>
                 </div>
             
-                <div className=' w-full flex items-center justify-center z-50'>
+                <div className=' w-full flex items-center justify-center z-30'>
                             <div className=' flex flex-col gap-5 text-lg font-bold'>
                                 <div className=' flex w-full gap-8'>
                                     <img src={plus} className= ' bg-white' />
