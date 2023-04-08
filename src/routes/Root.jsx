@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 const Root = () => {
   return (
     <>
-      <div className='h-screen w-full'>
+      <div className='h-screen w-full font-gilroy'>
           <Outlet />
       </div>
     </>

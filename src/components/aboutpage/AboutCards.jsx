@@ -8,7 +8,7 @@ import vision from '@assets/Our-Vision.png.png';
 const Aboutsection3 = () => {
   return (
     <div>
-      <div className='bg-ablack w-screen min-h-screen flex items-center flex-col '>
+      <div className='bg-ablack w-screen min-h-screen flex items-center gap-5 flex-col '>
         <div className='text-white font-gilroy-bold text-4xl md:text-[3rem] text-center px-5 md:px-0 pt-20 max-w-[600px] font-bold'>
           <h1 className='text-twhite'>Your success is our top priority -always.</h1>
         </div>

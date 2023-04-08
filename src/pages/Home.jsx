@@ -8,6 +8,7 @@ import  Services from '../components/homepage/Services'
 import  Testimonial from '../components/homepage/Testimonial'
 import  LeftNavbar from '../components/navbar/LeftNavbar'
 import MobileNavbar from '../components/navbar/MobileNavbar'
+import Navbar from '../components/navbar/Navbar'
 
 
 
@@ -27,7 +28,8 @@ const Home = () => {
 
           <div className=' h-full w-full '>
 
-              <section id='section-1' className='h-full w-full '>
+              <section id='section-1' className='h-full w-full bg-landerImg md:bg-cover bg-no-repeat bg-[80%] md:bg-center'>
+                  <Navbar/>
                   <Hero />
               </section>
               

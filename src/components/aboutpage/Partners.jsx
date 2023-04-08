@@ -8,13 +8,14 @@ import pantera from '../../assets/pantera.png'
 const Partners = () => {
  
   return (
-    <div className=' h-56 bg-black w-full flex flex-col justify-center items-center gap-10 md:gap-16' id="backgorund">
-        <span className=' text-4xl text-white font-bold'>Our Partners</span>
+    <div className=' h-56 bg-black w-full flex flex-col justify-center items-center gap-10 md:gap-12' id="backgorund">
+        <span className=' text-4xl text-white font-gilroy-bold'>Our Partners</span>
         <div className=' flex flex-wrap justify-around md:justify-evenly items-center w-full px-5 md:px-0'>
-            <img src={pantera} className= ' w-32 md:w-48'/>
-            <img src={reddit} className= ' w-32 md:w-48'/>
-            <img src={tcs} className= ' w-32 md:w-48'/>
-            <img src={chorus} className= ' w-32 md:w-48'/>
+            <img src={pantera} className= ' w-32 md:w-40'/>
+            <img src={reddit} className= ' w-32 md:w-40'/>
+            <img src={tcs} className= ' w-32 md:w-40'/>
+            <img src={chorus} className= ' w-32 md:w-40'/>
+            <img src={pantera} className= ' w-32 md:w-40'/>
         </div>
     </div>
   )

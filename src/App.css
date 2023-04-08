@@ -23,7 +23,7 @@ li {
 }
 
 .active .line {
-  width: 128px;
+  width: 100px;
   height: 2px;
   /* transition: all 0.5s; */
 }

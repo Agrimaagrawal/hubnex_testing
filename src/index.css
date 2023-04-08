@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Gilroy;
-    src: url(./assets/Gilroy-Light.otf) format('otf');
+    font-family: 'Gilroy';
+    src: url(./assets/Gilroy-Light.otf);
+}
+@font-face {
+    font-family: 'GilroyExtraBold';
+    src: url(./assets/Gilroy-ExtraBold.otf);
 }

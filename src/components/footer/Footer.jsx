@@ -48,8 +48,8 @@ const Footer = () => {
   }
 
   return (
-    <div className=' flex flex-col justify-center items-center h-screen w-full bg-footerImg bg-center z-50 bg-no-repeat bg-cover'>
-      <div className=' md:w-[70%] h-full md:flex justify-between items-center text-white py-5 lg:py-0 md:mt-28'>
+    <div className=' flex flex-col justify-center items-center h-auto sm:h-screen w-full bg-black'>
+      <div className=' md:w-[70%] h-full md:flex sm:justify-between items-center text-white py-5 lg:py-0 md:mt-28'>
         <div className=' flex flex-col gap-5 md:gap-10'>
           <div className=' text-4xl md:text-6xl font-semibold text-white'>
             <h1 className=' text-center md:text-start'>let's talk</h1>
@@ -78,7 +78,7 @@ const Footer = () => {
             </label>
           </form>
       </div>
-      <div className=' flex flex-col w-full justify-center items-center gap-5 text-white h-80 text-lg'>
+      <div className=' flex flex-col w-full h-48 justify-center items-center gap-3 text-white sm:h-80 text-lg'>
         <span className=' text-lg'>connect with us</span>
         <div className=' flex flex-wrap gap-5 items-center'>
           <Link to='/about'><TwitterIcon/></Link>

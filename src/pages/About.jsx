@@ -6,6 +6,7 @@ import Partners from '../components/aboutpage/Partners'
 import Footer from '../components/footer/Footer' 
 import AboutCards from '../components/aboutpage/AboutCards' 
 import Swiperpartners from '../components/aboutpage/Swiperpartners'
+import Navbar from '../components/navbar/Navbar'
 
 
 
@@ -13,16 +14,17 @@ const About = () => {
 
   const isMobile=()=> {
     const match=window.matchMedia('(pointer:coarse)');
-    return(match && match.matches);
-    
-    
+    return(match && match.matches); 
   }
 
 
   
   return (
     <div className='overflow-hidden'>
+      <section className=' h-screen w-full bg-black overflow-hidden'>
+        <Navbar/>
         <Hero/>
+      </section>
         <Abouts/>
         <AboutCards/>
         <Ourself/>
