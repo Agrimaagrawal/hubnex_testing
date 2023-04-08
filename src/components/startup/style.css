@@ -2,30 +2,32 @@
     background: linear-gradient(180deg, rgba(160, 221, 255, 0.1) 0%, rgba(160, 219, 255, 0.1) 0.01%, rgba(133, 90, 255, 0.1) 104.59%, rgba(255, 160, 246, 0.1) 104.59%), rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(12px);
 
-transform: matrix(0.99, 0.16, -0.14, 0.99, 0, 0);
+
 }
 #box2{
     background: linear-gradient(180deg, rgba(160, 221, 255, 0.1) 0%, rgba(133, 90, 255, 0.1) 100%, rgba(255, 160, 246, 0.1) 100%), rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(12px);
 /* Note: backdrop-filter has minimal browser support */
 
-transform: matrix(1, 0, 0, 1, 0, 0);
+
 }
 #box3{
     background: linear-gradient(180deg, rgba(160, 221, 255, 0.1) 0%, rgba(133, 90, 255, 0.1) 100%, rgba(255, 160, 246, 0.1) 100%), rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(12px);
-transform: matrix(1, 0, 0, 1, 0, 0);
+
 }
 #box4{
     background: linear-gradient(180deg, rgba(160, 221, 255, 0.1) 0%, rgba(160, 219, 255, 0.1) 0.01%, rgba(133, 90, 255, 0.1) 104.59%, rgba(255, 160, 246, 0.1) 104.59%), rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(12px);
 /* Note: backdrop-filter has minimal browser support */
 
-transform: matrix(0.99, -0.16, 0.13, 0.99, 0, 0);
+
 }
 #circle{
-    background: linear-gradient(180deg, #A0DDFF 0%, #855AFF 100%, #FFA0F6 100%);
-filter: blur(180px);
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(180deg, #A0DDFF 10%, #855AFF 100%, #FFA0F6 100%);
+    filter:blur(150px)
 }
 #display{
     background: linear-gradient(99.53deg, #07010A 0.68%, #321252 37.72%, #49106C 61.51%, #1A0A29 100%);

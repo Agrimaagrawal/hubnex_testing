@@ -15,6 +15,7 @@ module.exports = {
         'grey':' #565656',
         'bgblack':'#0D0D0D',
         'linegreen':"#23FFF2",
+        'textwhite':"#EFEFEF",
      },
       fontFamily :{
         'gilroy': ['Gilroy', 'sans-serif']
@@ -35,7 +36,11 @@ module.exports = {
         'abouts': "url('@assets/abouts.png')",
         'earth':"url('@assets/earth.png')",
         'hands':"url('@assets/hands.png')",
-        'healthindus':"url(@assets/healthindus.png)"
+        'healthindus':"url(@assets/healthindus.png)",
+        'card':"url(@assets/Rectangle.png)",
+        'card2':"url(@assets/Rectangle2.png)",
+        'card3':"url(@assets/Rectangle3.png)",
+        'card4':"url(@assets/Rectangle4.png)",
       }
     },
   },

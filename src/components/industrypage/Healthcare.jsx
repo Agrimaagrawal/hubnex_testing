@@ -11,22 +11,22 @@ const Healthcare = () => {
         <Navbar />
     <div className=' h-screen w-full flex items-center justify-center'>
         <div className=' w-[80%] flex items-center'>
-            <div className=' text-white flex flex-col gap-10 w-90 max-[820px]:text-center'>
-                <span className=' text-4xl md:text-5xl'>empowering <br/> healthcare with AI</span>
-                <p className=' text-lg '>We help you realize intelligent, connected, <br></br>and patient-centric healthcare.</p>
-                <button className=' w-max py-2 px-5 bg-white text-black rounded-full max-[820px]:mx-auto'>Let's talk</button>
+            <div className=' text-white flex flex-col font-gilroy  gap-10 w-90 max-[820px]:text-center'>
+                <span className=' text-4xl md:text-5xl font-bold'>empowering <br/> healthcare with AI</span>
+                <p className=' text-lg '>We help you realize intelligent, connected, and<br></br> patient-centric healthcare.</p>
+                <button className=' w-max py-2 px-5 bg-white text-black rounded-full border-r-4 border-purple-500 font-bold border-b-4 max-[820px]:mx-auto'>Let's talk</button>
             </div>
         </div>
     </div>
     </div>
     
     <div className='min-h-screen w-full bg-bgblack flex items-center flex-col'>
-        <div className=' text-white xl:mt-20'>
-            <h1 className='font-extrabold xl:text-5xl text-2xl font-gilroy p-6 text-center'>Innovating for the Future of Care</h1>
+        <div className=' text-textwhite xl:mt-20'>
+            <h1 className='font-bold xl:text-5xl text-2xl font-gilroy p-6 text-center'>Innovating for the Future of Care</h1>
 
         </div>
-        <div className='text-white xl:w-[990px]  '>
-        <p className='font-gilroy xl:text-lg font-extrathin xl:justify-center text-center text-sm m-3'>Our focus is on assisting healthcare and life sciences companies on a global scale to rethink their operational procedures and provide exceptional patient experiences. By combining our extensive knowledge of the industry and business processes with advanced technological expertise, we are dedicated 
+        <div className='text-textwhite xl:w-[800px]  '>
+        <p className=' xl:text-lg  xl:justify-center  text-[24px] m-3'>Our focus is on assisting healthcare and life sciences companies on a global scale to rethink their operational procedures and provide exceptional patient experiences. By combining our extensive knowledge of the industry and business processes with advanced technological expertise, we are dedicated 
                 to creating groundbreaking solutions that revolutionize the way our clients conduct their business.</p>
         </div>
         <div className='flex mt-5 xl:mt-20 xl:gap-36 xl:flex-row flex-col gap-4'>

@@ -13,7 +13,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Contact = () => {
   return (
-    <div className='bg-black h-screen w-full flex flex-col justify-between pt-10 text-white '>
+    <div className='bg-black min-h-screen w-full flex flex-col justify-between pt-10 text-white '>
+      <div className='w-52 h-40 rounded-full bg-slate-400 absolute left-9 ' id="circle"></div>
        <div className=' w-[80%] flex flex-col h-full m-auto justify-between items-center'>
           <div className=' flex w-full justify-between h-full items-center flex-col lg:flex-row'>
 

@@ -6,15 +6,25 @@ import Testimonial from '../components/startup/Testimonial'
 import Team from '../components/startup/Team'
 import Contact from '../components/startup/Contact'
 import Field from '../components/startup/Field'
+import Swiperpartners from '../components/aboutpage/Swiperpartners'
+import MobileCounter from '../components/startup/MobileCounter'
+import SwiperCards from '../components/startup/SwiperCards'
 
 const Startup = () => {
+  const isMobile=()=> {
+    const match=window.matchMedia('(pointer:coarse)');
+    return(match && match.matches);
+    
+    
+  }
   return (
     <div className=' h-screen relative'>
         <Hero/>
-        <Partner/>
+        {isMobile()?<Swiperpartners/> :<Partner/>}
+        <MobileCounter/>
         <Testimonial/>
         <Team/>
-        <Field/>
+        {isMobile()?<SwiperCards/>:<Field/>}
         <Contact/>
         
         

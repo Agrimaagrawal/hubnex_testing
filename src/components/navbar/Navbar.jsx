@@ -4,31 +4,27 @@ import logo from '../../assets/logo.png'
 import searchIcon from '../../assets/search_icon.png'
 import Search from '../searchbar/Search'
 import MobileNavbar from './MobileNavbar'
-<<<<<<< HEAD
-import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-=======
 import menu from '@assets/menuUp.png'
 import close from '@assets/Xmark.png'
 import search from '@assets/search_icon.png'
->>>>>>> a141b28456a4d4342f97c18b8894b4364b282cf6
-
+import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 const Navbar = () => {
 
   const [searchToggle, setSearchToggle] = useState(false);
-<<<<<<< HEAD
-  const [dropIndustries,setDropIndustries]=useState(false);
-=======
   const [open, setOpen] = useState(false);
->>>>>>> a141b28456a4d4342f97c18b8894b4364b282cf6
+  const [upind,setUpind]=useState(false);
 
   const handleSearch = () =>{
     setSearchToggle((prev)=> !prev)
   }
   const handleOpen = ()=>{
     setOpen((prev)=>!prev)
-}
+  }
+  const handleIndustries=()=>{
+    setUpind((upind)=>!upind)
+  }
 
 
   return (
@@ -45,9 +41,9 @@ const Navbar = () => {
         <div className=' hidden xl:flex gap-16 items-center text-white'>
           <NavLink to='/about' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>About Us</NavLink>
           <NavLink to='/service' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Services</NavLink>
-          <NavLink to='/industries' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Industries <span className='' onClick={handleIndustries}>{dropIndustries ?<KeyboardArrowUpIcon/>:<KeyboardArrowDown/>}</span></NavLink>
+          <NavLink to='/industries' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Industries <span className='' onClick={handleIndustries}>{upind?<KeyboardArrowUpIcon/>:<KeyboardArrowDown/>}</span></NavLink>
           {
-            dropIndustries && 
+            upind && 
             <div className="flex flex-col  bg-white/40 backdrop-blur-2xl w-[150px] absolute top-20 right-[34rem] rounded-lg">
              <Link to='/Healthcare'><div className='text-white p-4 text-center'>Healthcare</div></Link> 
 
