@@ -2,7 +2,7 @@ import React from 'react'
 
 const Forms = () => {
   return (
-    <div className=' text-white'>Forms</div>
+    <div className=' text-white'>Forms </div>
   )
 }
 

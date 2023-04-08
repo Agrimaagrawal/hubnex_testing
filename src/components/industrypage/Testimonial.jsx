@@ -35,7 +35,7 @@ const Testimonial = () => {
             </div>
         </div>
         <div className=' flex-1 w-full'>
-        {isMobile() ? <Swiperpartners/> : <Partners />}
+            <Partners />
         </div>
     </div>
   )

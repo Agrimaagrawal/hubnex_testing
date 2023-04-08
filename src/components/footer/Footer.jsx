@@ -98,7 +98,7 @@ const Footer = () => {
           <hr className=' border-[1px] h-4'/>
           <Link to='service'>Data Protection</Link>
           <hr className=' border-[1px] h-4'/>
-          <Link to='/about'>Terms and Conditions</Link>
+          <Link to='/admin'>Terms and Conditions</Link>
           <hr className=' border-[1px] h-4'/>
           <Link to='/about'>Privacy Policy</Link>
           <hr className=' border-[1px] h-4'/>

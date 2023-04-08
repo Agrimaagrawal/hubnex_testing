@@ -13,6 +13,8 @@ module.exports = {
         'twhite':' #F4F4F4',
         'orange':'#FF5300',
         'grey':' #565656',
+        'bgblack':'#0D0D0D',
+        'linegreen':"#23FFF2",
      },
       fontFamily :{
         'gilroy': ['Gilroy', 'sans-serif'],
@@ -36,6 +38,7 @@ module.exports = {
         'abouts': "url('@assets/abouts.png')",
         'earth':"url('@assets/earth.png')",
         'hands':"url('@assets/hands.png')",
+        'healthindus':"url(@assets/healthindus.png)"
       }
     },
   },

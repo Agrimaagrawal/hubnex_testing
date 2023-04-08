@@ -26,6 +26,9 @@ const Applications = React.lazy(()=> import( './components/adminpage/Application
 const Invoices = React.lazy(()=> import('./components/adminpage/Invoices')) 
 const PushNotify = React.lazy(()=> import('./components/adminpage/PushNotify')) 
 const Help = React.lazy(()=> import('./components/adminpage/Help')) 
+const Healthcare=React.lazy(()=>import('./components/industrypage/Healthcare'))
+const Invest=React.lazy(()=>import('./components/adminpage/Invest'))
+const Terms =React.lazy(()=>import('./components/adminpage/Terms'))
 
 function App() {
 
@@ -115,6 +118,11 @@ function App() {
               element: <Suspense fallback={<Loader/>}><Industries/></Suspense>
             },
             {
+              path:'/Healthcare',
+              element:<Suspense fallback={<Loader/>}><Healthcare/></Suspense>
+            },
+            
+            {
               path: '/contact',
               element: <Suspense fallback={<Loader/>}><Contact/></Suspense>
             },
@@ -122,6 +130,7 @@ function App() {
               path: '/startup-program',
               element: <Suspense fallback={<Loader/>}><Startup/></Suspense>
             },
+            
             {
               path: '/access',
               element: <Suspense fallback={<Loader/>}><Access/></Suspense>
@@ -148,8 +157,21 @@ function App() {
                 },
                 {
                   path: '/admin/forms',
-                  element: <Suspense fallback={<Loader/>}><Forms/></Suspense>
+                  element: <Suspense fallback={<Loader/>}><Forms/></Suspense>,
+                  
+                  
                 },
+                {
+                  path:'/admin/forms/invest',
+                  element:<Suspense fallback={<Loader/>}><Invest/></Suspense>
+
+                },
+                {
+                  path:'/admin/cms/terms',
+                  element:<Suspense fallback={<Loader/>}><Terms/></Suspense>
+
+                },
+                
                 {
                   path: '/admin/referral',
                   element: <Suspense fallback={<Loader/>}><Referral/></Suspense>

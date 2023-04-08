@@ -4,16 +4,21 @@ import logo from '../../assets/logo.png'
 import searchIcon from '../../assets/search_icon.png'
 import Search from '../searchbar/Search'
 import MobileNavbar from './MobileNavbar'
+<<<<<<< HEAD
+import KeyboardArrowDown from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+=======
 import menu from '@assets/menuUp.png'
 import close from '@assets/Xmark.png'
 import search from '@assets/search_icon.png'
+>>>>>>> a141b28456a4d4342f97c18b8894b4364b282cf6
 
 
 const Navbar = () => {
 
   const [searchToggle, setSearchToggle] = useState(false);
-  const [active, setActive] = useState(false);
   const [open, setOpen] = useState(false);
+>>>>>>> a141b28456a4d4342f97c18b8894b4364b282cf6
 
   const handleSearch = () =>{
     setSearchToggle((prev)=> !prev)
@@ -36,8 +41,8 @@ const Navbar = () => {
         </div>
         <div className=' hidden xl:flex gap-20 items-center font-semibold text-white'>
           <NavLink to='/about' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>About Us</NavLink>
-          <NavLink to='/service' className={({ isActive }) => isActive ? `${setActive(true)} bg-white px-5 py-2 text-black rounded-full` : ''}>Services</NavLink>
-          <NavLink to='/industries' className={({ isActive }) => isActive ? `${setActive(true)} bg-white px-5 py-2 text-black rounded-full` : ''}>Industries</NavLink>
+          <NavLink to='/service' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Services</NavLink>
+          <NavLink to='/industries' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Industries</NavLink>
           <NavLink to='/contact' className={({ isActive }) => isActive ? 'bg-white px-5 py-2 text-black rounded-full' : ''}>Contact</NavLink>
           <img onClick={handleSearch} src={searchIcon} alt="search icon" width={20} height={20} className='cursor-pointer z-50'/>
           <Link to='/startup-program'><button className={` border-white ${active ? 'bg-white text-black' : 'bg-transparent text-white'} border-2 py-1 px-3 rounded-full text-sm font-semibold`}>Startup Program</button></Link>
@@ -52,6 +57,7 @@ const Navbar = () => {
         </div>
         <MobileNavbar open={open}/>
       </div>
+      
     </div>
   )
 }
