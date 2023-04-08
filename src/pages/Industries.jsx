@@ -4,10 +4,9 @@ import Testimonial from '../components/industrypage/Testimonial'
 import Work from '../components/industrypage/Work'
 import Footer from '../components/footer/Footer'
 import Cards from '../components/industrypage/Cards'
+import Swiperpartners from '../components/aboutpage/Swiperpartners'
 
 import Card from '../components/industrypage/Card'
-import Partners from '../components/aboutpage/Partners'
-import Swiperpartners from '../components/aboutpage/Swiperpartners'
 
 const Industries = ()=>{
   const isMobile=()=> {

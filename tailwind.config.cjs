@@ -18,9 +18,11 @@ module.exports = {
         'textwhite':"#EFEFEF",
      },
       fontFamily :{
-        'gilroy': ['Gilroy', 'sans-serif']
+        'gilroy': ['Gilroy', 'sans-serif'],
+        'gilroy-bold': ['GilroyExtraBold', 'sans-serif']
       },
       backgroundImage: {
+        'serviceLander': "url('@assets/serviceLander.png')",
         'balloonMob': "url('@assets/balloonMob.png')",
         'thanos': "url('@assets/thano.png')",
         'land': "url('@assets/testimo.png')",
@@ -32,6 +34,7 @@ module.exports = {
         'moon': "url('@assets/brandImage.png')",
         'landerImg': "url('@assets/landerImage1.png')",
         'balloon': "url('@assets/balloon.png')",
+        'balloon1': "url('@assets/balloon1.png')",
         'footerImg': "url('@assets/footer.png')",
         'abouts': "url('@assets/abouts.png')",
         'earth':"url('@assets/earth.png')",

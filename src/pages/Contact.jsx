@@ -4,9 +4,9 @@ import Navbar from '../components/navbar/Navbar'
 
 const Contact = () => {
   return (
-    <div className='  overflow-hidden'>
+    <div className=' bg-black overflow-hidden'>
       <Navbar/>
-          <Footer />
+      <Footer />
     </div>
   )
 }
